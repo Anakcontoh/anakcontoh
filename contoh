@@ -1,0 +1,12 @@
+Library.WorldCmds.Load("Spawn")
+wait(5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")["__MAP"].Interactive["Upgrade Station"]["control-panel"].CFrame
+
+for i = 1, 10 do
+lib.Network.Invoke("Buy Upgrade", "Orb Pickup Distance")
+lib.Network.Invoke("Buy Upgrade", "More Diamonds")
+lib.Network.Invoke("Buy Upgrade", "Pet Strength")
+lib.Network.Invoke("Buy Upgrade", "Pet Walkspeed")
+lib.Network.Invoke("Buy Upgrade", "Pet Storage")
+lib.Network.Invoke("Buy Upgrade", "Player Walkspeed")
+end
